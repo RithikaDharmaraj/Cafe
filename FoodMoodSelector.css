@@ -1,0 +1,53 @@
+.food-mood-selector {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .mood-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+    transition: transform 0.3s;
+  }
+  
+  .mood-item:hover {
+    transform: translateY(-5px);
+  }
+  
+  .mood-emoji {
+    font-size: 36px;
+    margin-bottom: 15px;
+  }
+  
+  .mood-image {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-bottom: 10px;
+  }
+  
+  .mood-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .mood-name {
+    font-weight: 500;
+  }
+  
+  @media (max-width: 768px) {
+    .food-mood-selector {
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+    
+    .mood-item {
+      width: 30%;
+    }
+  }

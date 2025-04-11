@@ -1,0 +1,171 @@
+/* PersonalInfo.css */
+.personal-info {
+    padding: 10px 0;
+  }
+  
+  .section-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .section-header h2 {
+    font-size: 20px;
+    font-weight: 600;
+    color: #333;
+  }
+  
+  .edit-button, 
+  .add-address-button, 
+  .change-password-button {
+    background: none;
+    border: none;
+    color: #20c997;
+    font-weight: 500;
+    cursor: pointer;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+  
+  .form-section {
+    margin-bottom: 30px;
+  }
+  
+  .form-row {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .form-group {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+  
+  .form-group label {
+    font-size: 14px;
+    font-weight: 500;
+    color: #555;
+  }
+  
+  .form-group input, 
+  .form-group textarea {
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 15px;
+    transition: border-color 0.2s;
+  }
+  
+  .form-group input:focus, 
+  .form-group textarea:focus {
+    outline: none;
+    border-color: #20c997;
+  }
+  
+  .form-group input:disabled {
+    background-color: #f9f9f9;
+    cursor: not-allowed;
+  }
+  
+  .form-buttons {
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  .save-button {
+    background-color: #20c997;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 12px 20px;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+  }
+  
+  .section-divider {
+    height: 1px;
+    background-color: #eee;
+    margin: 30px 0;
+  }
+  
+  .addresses-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .address-card {
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    padding: 18px;
+    position: relative;
+  }
+  
+  .address-card.default {
+    border: 2px solid #20c997;
+    background-color: rgba(32, 201, 151, 0.05);
+  }
+  
+  .address-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .address-header h3 {
+    font-size: 16px;
+    font-weight: 600;
+  }
+  
+  .default-badge {
+    background-color: #20c997;
+    color: white;
+    font-size: 12px;
+    padding: 4px 8px;
+    border-radius: 4px;
+  }
+  
+  .address-details p {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 5px;
+  }
+  
+  .address-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 15px;
+  }
+  
+  .edit-address,
+  .delete-address,
+  .set-default {
+    background: none;
+    border: 1px solid #ddd;
+    padding: 8px 12px;
+    font-size: 13px;
+    border-radius: 6px;
+    cursor: pointer;
+  }
+  
+  .edit-address {
+    color: #333;
+  }
+  
+  .delete-address {
+    color: #ff3b30;
+  }
+  
+  .set-default {
+    color: #20c997;
+  }
